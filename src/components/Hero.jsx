@@ -1,3 +1,4 @@
+import heroImage from "../assets/hero-tech.png"
 function Hero() {
   return (
     <section className="bg-white px-6 py-20 md:py-28">
@@ -27,25 +28,27 @@ function Hero() {
               href="https://wa.me/"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg px-6 py-3 font-semibold"
+              className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
             >
               Talk to Us on WhatsApp
             </a>
 
             <a
               href="#services"
-              className="rounded-lg border px-6 py-3 font-semibold"
+              className="rounded-lg border border-blue-600 px-6 py-3 font-semibold text-blue-600 transition hover:bg-blue-50"
             >
               View Our Services
             </a>
           </div>
         </div>
 
-        <div className="flex min-h-80 items-center justify-center rounded-2xl bg-gray-100">
-          <p className="text-center text-gray-500">
-            Cybatech visual / project image
-          </p>
-        </div>
+        <div className="overflow-hidden rounded-2xl">
+    <img
+    src={heroImage}
+    alt="Cybatech technology solutions"
+    className="h-full min-h-80 w-full object-cover"
+    />
+    </div>
 
       </div>
     </section>
