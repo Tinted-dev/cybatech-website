@@ -23,44 +23,44 @@ const services = [
 
 function Services() {
   return (
-    <section id="services" className="px-6 py-20">
-      <div className="mx-auto max-w-7xl">
+    <section id="services" className="bg-gray-50 px-6 py-20">
+  <div className="mx-auto max-w-7xl">
 
-        <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-wider">
-            What We Do
-          </p>
+    <div className="max-w-2xl">
+      <p className="text-sm font-semibold uppercase tracking-wider text-blue-600">
+        What We Do
+      </p>
 
-          <h2 className="mt-3 text-3xl font-bold md:text-4xl">
-            Technology Solutions for Your Business
-          </h2>
+      <h2 className="mt-3 text-3xl font-bold md:text-4xl">
+        Technology Solutions for Your Business
+      </h2>
 
-          <p className="mt-4 text-gray-600">
-            From infrastructure and security to websites and software,
-            Cybatech provides practical technology solutions that support
-            your day-to-day business operations.
+      <p className="mt-4 text-gray-600">
+        From infrastructure and security to websites and software,
+        Cybatech provides practical technology solutions that support
+        your day-to-day business operations.
+      </p>
+    </div>
+
+    <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+      {services.map((service) => (
+        <div
+          key={service.title}
+          className="rounded-xl border border-gray-200 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+        >
+          <h3 className="text-xl font-semibold text-blue-600">
+            {service.title}
+          </h3>
+
+          <p className="mt-3 leading-7 text-gray-600">
+            {service.description}
           </p>
         </div>
+      ))}
+    </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {services.map((service) => (
-            <div
-              key={service.title}
-              className="rounded-xl border p-6"
-            >
-              <h3 className="text-xl font-semibold">
-                {service.title}
-              </h3>
-
-              <p className="mt-3 leading-7 text-gray-600">
-                {service.description}
-              </p>
-            </div>
-          ))}
-        </div>
-
-      </div>
-    </section>
+  </div>
+</section>
   )
 }
 

@@ -24,16 +24,16 @@ const reasons = [
 
 function WhyCybatech() {
   return (
-    <section className="px-6 py-20">
+    <section className="bg-gray-50 px-6 py-20">
       <div className="mx-auto max-w-7xl">
 
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-wider">
+          <p className="text-sm font-semibold uppercase tracking-wider text-blue-600">
             Why Cybatech
           </p>
 
           <h2 className="mt-3 text-3xl font-bold md:text-4xl">
-            Technology Support You Can Understand and Trust
+            Technology Built Around Your Business
           </h2>
 
           <p className="mt-4 text-gray-600">
@@ -46,7 +46,7 @@ function WhyCybatech() {
           {reasons.map((reason) => (
             <div
               key={reason.title}
-              className="rounded-xl bg-gray-50 p-6"
+              className="rounded-xl border border-gray-200 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
               <h3 className="text-xl font-semibold">
                 {reason.title}

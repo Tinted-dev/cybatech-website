@@ -1,56 +1,71 @@
 import heroImage from "../assets/hero-tech.png"
+
 function Hero() {
   return (
-    <section className="bg-white px-6 py-20 md:py-28">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
+    <section className="relative overflow-hidden bg-slate-950 px-6 py-24 md:py-32">
+      {/* Background image */}
+      <img
+        src={heroImage}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
 
-        <div>
-          <p className="text-base font-semibold uppercase tracking-wider text-blue-600">
-             Business Technology Solutions
-          </p>
+      {/* Dark gradient overlay for text contrast + brand tint */}
+      <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-950/60" />
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/40" />
 
-          <h1 className="max-w-2xl text-4xl font-bold tracking-tight md:text-6xl">
-            Empowering Businesses to Grow Through Technology
-          </h1>
+      {/* Subtle grid pattern for a technical feel */}
+      <div
+        className="absolute inset-0 opacity-[0.02]"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px)",
+          backgroundSize: "48px 48px",
+        }}
+      />
 
-          <p className="mt-6 max-w-xl text-lg leading-8 text-gray-600">
-             We help SMEs, hotels and offices use technology to streamline operations,
-             improve efficiency, reduce unnecessary costs and create better ways to serve
-             their customers.
-          </p>
+      <div className="relative mx-auto max-w-4xl">
+        <p className="text-base font-semibold uppercase tracking-wider text-blue-400">
+          Business Technology Solutions
+        </p>
 
-          <p className="mt-4 text-sm font-medium text-blue-600">
-             IT Infrastructure • Security Systems • Digital Solutions • IT Support
-          </p>
+        <h1 className="mt-4 max-w-3xl text-4xl font-bold tracking-tight text-white md:text-6xl">
+          Empowering Businesses to{" "}
+          <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+            Grow Through Technology
+          </span>
+        </h1>
 
-          <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="https://wa.me/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
-            >
-              Talk to Us on WhatsApp
-            </a>
+        <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
+          We help SMEs, hotels and offices use technology to streamline operations,
+          improve efficiency, reduce unnecessary costs and create better ways to serve
+          their customers.
+        </p>
 
-            <a
-              href="#services"
-              className="rounded-lg border border-blue-600 px-6 py-3 font-semibold text-blue-600 transition hover:bg-blue-50"
-            >
-              View Our Services
-            </a>
-          </div>
+        <p className="mt-4 text-sm font-medium tracking-wide text-blue-400">
+          IT Infrastructure&nbsp;•&nbsp;Security Systems&nbsp;•&nbsp;Digital Solutions&nbsp;•&nbsp;IT Support
+        </p>
+
+        <div className="mt-8 flex flex-wrap gap-4">
+          <a
+            href="https://wa.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-600/25 transition hover:bg-blue-700 hover:shadow-blue-600/40"
+          >
+            Talk to Us on WhatsApp
+          </a>
+
+          <a
+            href="#services"
+            className="rounded-lg border border-white/30 px-6 py-3 font-semibold text-white transition hover:border-blue-400 hover:bg-white/5"
+          >
+            View Our Services
+          </a>
         </div>
-
-        <div className="overflow-hidden rounded-2xl">
-    <img
-    src={heroImage}
-    alt="Cybatech technology solutions"
-    className="h-full min-h-80 w-full object-cover"
-    />
-    </div>
-
       </div>
+  
     </section>
   )
 }
