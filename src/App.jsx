@@ -1,25 +1,29 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Services from './components/Services'
-import WhyCybatech from './components/WhyCybatech'
-import Projects from './components/Projects'
-import About from './components/About'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
+
+import Home from "./pages/Home"
+import ServicesPage from "./pages/ServicesPage"
+import ProjectsPage from "./pages/ProjectsPage"
+import AboutPage from "./pages/AboutPage"
+import ContactPage from "./pages/ContactPage"
 
 function App() {
-
   return (
-    <>
-     <Navbar />
-      <Hero />
-      <Services />
-      <WhyCybatech />
-      <Projects />
-      <About />
-      <Contact />
+    <BrowserRouter>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+
       <Footer />
-    </>
+    </BrowserRouter>
   )
 }
 

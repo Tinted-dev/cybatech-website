@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { useState } from "react"
 import cybatechLogo from "../assets/cybatech-logo.png"
 
@@ -29,46 +30,41 @@ function Navbar() {
             <img
               src={cybatechLogo}
               alt="Cybatech IT Solutions"
-              className="h-10 w-auto max-w-[160px] object-contain"
+              className="h-15 w-auto max-w-[160px] object-contain"
             />
           </a>
 
           {/* Desktop Navigation */}
           <div className="ml-auto hidden items-center gap-8 md:flex">
-            <a
-              href="/"
+            <Link to="/"
               className="text-gray-700 transition hover:text-blue-600"
             >
               Home
-            </a>
+            </Link>
 
-            <a
-              href="#services"
+            <Link to ="/services"
               className="text-gray-700 transition hover:text-blue-600"
             >
               Services
-            </a>
+            </Link>
 
-            <a
-              href="#projects"
+            <Link to ="/projects"
               className="text-gray-700 transition hover:text-blue-600"
             >
               Projects
-            </a>
+            </Link>
 
-            <a
-              href="#about"
+            <Link to="/about"
               className="text-gray-700 transition hover:text-blue-600"
             >
               About
-            </a>
+            </Link>
 
-            <a
-              href="#contact"
+            <Link to="/contact"
               className="text-gray-700 transition hover:text-blue-600"
             >
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* Desktop WhatsApp CTA */}
