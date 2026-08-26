@@ -90,62 +90,62 @@ function Navbar() {
         </div>
 
         {/* Mobile Navigation */}
-        {menuOpen && (
-          <div className="border-t px-6 py-4 md:hidden">
-            <div className="flex flex-col gap-4">
+{menuOpen && (
+  <div className="border-t px-6 py-4 md:hidden">
+    <div className="flex flex-col gap-4">
 
-              <a
-                href="/"
-                onClick={() => setMenuOpen(false)}
-                className="text-gray-700 hover:text-blue-600"
-              >
-                Home
-              </a>
+      <Link
+        to="/"
+        onClick={() => setMenuOpen(false)}
+        className="text-gray-700 hover:text-blue-600"
+      >
+        Home
+      </Link>
 
-              <a
-                href="#services"
-                onClick={() => setMenuOpen(false)}
-                className="text-gray-700 hover:text-blue-600"
-              >
-                Services
-              </a>
+      <Link
+        to="/services"
+        onClick={() => setMenuOpen(false)}
+        className="text-gray-700 hover:text-blue-600"
+      >
+        Services
+      </Link>
 
-              <a
-                href="#projects"
-                onClick={() => setMenuOpen(false)}
-                className="text-gray-700 hover:text-blue-600"
-              >
-                Projects
-              </a>
+      <Link
+        to="/projects"
+        onClick={() => setMenuOpen(false)}
+        className="text-gray-700 hover:text-blue-600"
+      >
+        Projects
+      </Link>
 
-              <a
-                href="#about"
-                onClick={() => setMenuOpen(false)}
-                className="text-gray-700 hover:text-blue-600"
-              >
-                About
-              </a>
+      <Link
+        to="/about"
+        onClick={() => setMenuOpen(false)}
+        className="text-gray-700 hover:text-blue-600"
+      >
+        About
+      </Link>
 
-              <a
-                href="#contact"
-                onClick={() => setMenuOpen(false)}
-                className="text-gray-700 hover:text-blue-600"
-              >
-                Contact
-              </a>
+      <Link
+        to="/contact"
+        onClick={() => setMenuOpen(false)}
+        className="text-gray-700 hover:text-blue-600"
+      >
+        Contact
+      </Link>
 
-              <a
-                href="https://wa.me/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-lg bg-blue-600 px-5 py-2.5 text-center font-medium text-white hover:bg-blue-700"
-              >
-                Talk to us
-              </a>
+      <a
+        href="https://wa.me/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-lg bg-blue-600 px-5 py-2.5 text-center font-medium text-white hover:bg-blue-700"
+      >
+        Talk to us
+      </a>
 
-            </div>
-          </div>
-        )}
+    </div>
+  </div>
+)}
       </nav>
     </>
   )
