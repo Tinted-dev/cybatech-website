@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { whatsappUrl } from "../config/contact"
+import SEO from "../components/SEO"
 import cctvProject from "../assets/project-cctv.jpg"
 import websiteProject from "../assets/project-website.jpg"
 import infrastructureProject from "../assets/project-infrastructure.jpg"
@@ -57,6 +59,11 @@ function ProjectsPage() {
 
   return (
     <>
+    <SEO
+  title="IT Services & Technology Solutions"
+  description="Explore Cybatech's IT infrastructure, security systems, IT support, website development and digital solutions for businesses in Kenya."
+  path="/services"
+/>
       {/* Header */}
       <section className="bg-slate-900 px-6 py-20 md:py-28">
         <div className="mx-auto max-w-4xl text-center">
@@ -175,13 +182,12 @@ function ProjectsPage() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              href="https://wa.me/"
+              href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg bg-white px-6 py-3 font-semibold text-blue-600 transition hover:bg-blue-50"
-            >
-              Chat on WhatsApp
-            </a>
+             >
+             Talk to Us on WhatsApp
+             </a>
             <a
               href="mailto:info@cybatech.co.ke"
               className="rounded-lg border border-white px-6 py-3 font-semibold text-white transition hover:bg-blue-700"

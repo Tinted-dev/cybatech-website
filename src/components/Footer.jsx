@@ -1,3 +1,4 @@
+import { whatsappUrl } from "../config/contact"
 function Footer() {
   return (
     <footer className="border-t border-slate-800 bg-slate-900 px-6 py-16">
@@ -18,14 +19,12 @@ function Footer() {
 
             <div className="mt-5 flex gap-3">
               <a
-                href="https://wa.me/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Chat on WhatsApp"
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 text-slate-300 transition hover:border-blue-400 hover:text-blue-400"
-              >
-                WA
-              </a>
+             href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+             WhatsApp
+            </a>
               <a
                 href="mailto:info@cybatech.co.ke"
                 aria-label="Email us"

@@ -1,3 +1,4 @@
+import { whatsappUrl } from "../config/contact"
 function Contact() {
   return (
     <section id="contact" className="bg-white px-6 py-20 md:py-28">
@@ -21,12 +22,11 @@ function Contact() {
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              href="https://wa.me/"
+              href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-blue-700"
             >
-              Chat on WhatsApp
+               Talk to Us on WhatsApp
             </a>
 
             <a

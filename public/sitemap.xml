@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+>
+
+  <url>
+    <loc>https://cybatech.co.ke/</loc>
+  </url>
+
+  <url>
+    <loc>https://cybatech.co.ke/services</loc>
+  </url>
+
+  <url>
+    <loc>https://cybatech.co.ke/projects</loc>
+  </url>
+
+  <url>
+    <loc>https://cybatech.co.ke/about</loc>
+  </url>
+
+  <url>
+    <loc>https://cybatech.co.ke/contact</loc>
+  </url>
+
+</urlset>

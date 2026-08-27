@@ -1,5 +1,5 @@
 import heroImage from "../assets/hero-tech.png"
-
+import { whatsappUrl } from "../config/contact"
 function Hero() {
   return (
     <section className="relative overflow-hidden bg-slate-950 px-6 py-24 md:py-32">
@@ -49,13 +49,12 @@ function Hero() {
 
         <div className="mt-8 flex flex-wrap gap-4">
           <a
-            href="https://wa.me/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-600/25 transition hover:bg-blue-700 hover:shadow-blue-600/40"
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           >
-            Talk to Us on WhatsApp
-          </a>
+        Talk to Us on WhatsApp
+        </a>
 
           <a
             href="#services"

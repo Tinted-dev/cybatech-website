@@ -1,3 +1,5 @@
+import SEO from "../components/SEO"
+import { whatsappUrl } from "../config/contact"
 const faqs = [
   {
     question: "How quickly can you respond to a support request?",
@@ -24,6 +26,11 @@ const faqs = [
 function ContactPage() {
   return (
     <>
+    <SEO
+  title="Contact Us"
+  description="Contact Cybatech IT Solutions for IT infrastructure, security systems, digital solutions and professional IT support in Kenya."
+  path="/contact"
+/>
       {/* Header */}
       <section className="bg-slate-900 px-6 py-20 md:py-28">
         <div className="mx-auto max-w-4xl text-center">
@@ -41,12 +48,11 @@ function ContactPage() {
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              href="https://wa.me/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-blue-700"
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             >
-              Chat on WhatsApp
+             Talk to Us on WhatsApp
             </a>
 
             <a

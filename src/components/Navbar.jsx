@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { useState } from "react"
 import cybatechLogo from "../assets/cybatech-logo.png"
-
+import { whatsappUrl } from "../config/contact"
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -69,12 +69,11 @@ function Navbar() {
 
           {/* Desktop WhatsApp CTA */}
           <a
-            href="https://wa.me/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden shrink-0 rounded-lg bg-blue-600 px-5 py-2.5 font-medium text-white transition hover:bg-blue-700 md:block"
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           >
-            Talk to us
+          Talk to Us on WhatsApp
           </a>
 
           {/* Mobile Menu Button */}
@@ -135,13 +134,12 @@ function Navbar() {
       </Link>
 
       <a
-        href="https://wa.me/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="rounded-lg bg-blue-600 px-5 py-2.5 text-center font-medium text-white hover:bg-blue-700"
+      href={whatsappUrl}
+      target="_blank"
+      rel="noopener noreferrer"
       >
-        Talk to us
-      </a>
+     Talk to Us on WhatsApp
+    </a>
 
     </div>
   </div>

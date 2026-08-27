@@ -2,7 +2,8 @@ import infrastructureImage from "../assets/service-infrastructure.jpg"
 import securityImage from "../assets/service-security.jpg"
 import supportImage from "../assets/service-support.jpg"
 import digitalImage from "../assets/service-digital.jpg"
-
+import SEO from "../components/SEO"
+import { whatsappUrl } from "../config/contact"
 const services = [
   {
     icon: "🖧",
@@ -156,7 +157,13 @@ const services = [
 
 function ServicesPage() {
   return (
+
     <>
+    <SEO
+  title="IT Services & Technology Solutions"
+  description="Explore Cybatech's IT infrastructure, security systems, IT support, website development and digital solutions for businesses in Kenya."
+  path="/services"
+/>
       {/* Header */}
       <section className="bg-slate-900 px-6 py-20 md:py-28">
         <div className="mx-auto max-w-4xl text-center">
@@ -259,12 +266,11 @@ function ServicesPage() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              href="https://wa.me/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-lg bg-white px-6 py-3 font-semibold text-blue-600 transition hover:bg-blue-50"
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             >
-              Chat on WhatsApp
+          Talk to Us on WhatsApp
             </a>
             <a
               href="mailto:info@cybatech.co.ke"

@@ -1,6 +1,7 @@
 import aboutImage from "../assets/about-cybatech.jpg"
 import storyImage from "../assets/about-story.jpg"
-
+import SEO from "../components/SEO"
+import { whatsappUrl } from "../config/contact"
 const stats = [
   { value: "50+", label: "Businesses Served" },
   { value: "100+", label: "Projects Completed" },
@@ -56,6 +57,11 @@ const values = [
 function AboutPage() {
   return (
     <>
+    <SEO
+  title="About Us"
+  description="Learn about Cybatech IT Solutions and our mission to help businesses grow through practical and reliable technology."
+  path="/about"
+/>
       {/* Header */}
       <section className="bg-slate-900 px-6 py-20 md:py-28">
         <div className="mx-auto max-w-4xl text-center">
@@ -270,13 +276,12 @@ function AboutPage() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              href="https://wa.me/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-lg bg-white px-6 py-3 font-semibold text-blue-600 transition hover:bg-blue-50"
-            >
-              Chat on WhatsApp
-            </a>
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+         Talk to Us on WhatsApp
+          </a>
             <a
               href="mailto:info@cybatech.co.ke"
               className="rounded-lg border border-white px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
