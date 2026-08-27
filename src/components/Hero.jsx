@@ -32,9 +32,9 @@ function Hero() {
         </p>
 
         <h1 className="mt-4 max-w-3xl text-4xl font-bold tracking-tight text-white md:text-6xl">
-          Empowering Businesses to{" "}
+          Empowering Businesses{" "}
           <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
-            Grow Through Technology
+          Through Technology
           </span>
         </h1>
 
