@@ -68,13 +68,13 @@ function Navbar() {
           </div>
 
           {/* Desktop WhatsApp CTA */}
-          <a
+          {/* <a
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
           >
           Talk to Us on WhatsApp
-          </a>
+          </a> */}
 
           {/* Mobile Menu Button */}
           <button

@@ -1,4 +1,5 @@
 import heroImage from "../assets/hero-tech.png"
+import { Link } from "react-router-dom"
 import { whatsappUrl } from "../config/contact"
 function Hero() {
   return (
@@ -56,12 +57,11 @@ function Hero() {
         Talk to Us on WhatsApp
         </a>
 
-          <a
-            href="#services"
+          <Link to ="/services"
             className="rounded-lg border border-white/30 px-6 py-3 font-semibold text-white transition hover:border-blue-400 hover:bg-white/5"
           >
             View Our Services
-          </a>
+          </Link>
         </div>
       </div>
   
