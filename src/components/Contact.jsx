@@ -25,6 +25,7 @@ function Contact() {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
+              className="rounded-lg border border-blue-600 px-6 py-3 font-semibold text-blue-600 transition hover:bg-blue-50"
             >
                Talk to Us on WhatsApp
             </a>

@@ -19,11 +19,13 @@ function Footer() {
 
             <div className="mt-5 flex gap-3">
               <a
-             href={whatsappUrl}
+            href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Whatsapp us"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 text-slate-300 transition hover:border-blue-400 hover:text-blue-400"
             >
-             WhatsApp
+             W
             </a>
               <a
                 href="mailto:info@cybatech.co.ke"
