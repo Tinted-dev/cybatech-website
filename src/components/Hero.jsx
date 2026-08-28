@@ -51,13 +51,12 @@ function Hero() {
         <div className="mt-8 flex flex-wrap gap-4">
           <a
           href={whatsappUrl}
-          className="rounded-lg border border-white/30 px-6 py-3 font-semibold text-white transition hover:border-blue-400 hover:bg-white/5"
-          
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-        Talk Us on WhatsApp
-        </a>
+    target="_blank"
+    rel="noopener noreferrer"
+    className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-600/25 transition hover:bg-blue-700 hover:shadow-blue-600/40"
+  >
+    Talk to Us on WhatsApp
+  </a>
 
           <Link to ="/services"
             className="rounded-lg border border-white/30 px-6 py-3 font-semibold text-white transition hover:border-blue-400 hover:bg-white/5"

@@ -18,7 +18,7 @@ function Footer() {
             </p>
 
             <div className="mt-5 flex gap-3">
-              <a
+            <a
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
